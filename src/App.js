@@ -1,15 +1,21 @@
 import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Container } from "./components/index.js";
-import { Header, Footer, MostPopular, Hero } from "./sections/index.js";
+import { Header, Footer } from "./sections/index.js";
+import { Home, Profile } from "./Pages/index.js";
 const App = () => {
   return (
     <>
-      <Header />
-      <Container>
-        <Hero />
-        <MostPopular />
-      </Container>
-      <Footer />
+      <Router>
+        <Header />
+        <Container>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/profile" element={<Profile />} />
+          </Routes>
+        </Container>
+        <Footer />
+      </Router>
     </>
   );
 };

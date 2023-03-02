@@ -15,10 +15,12 @@ const MostPopular = () => {
     );
   });
   return (
-    <SectionWrapper>
-      <SectionHeader>Most Popular</SectionHeader>
-      <div className="most-popular-items">{cards}</div>
-    </SectionWrapper>
+    <>
+      <SectionWrapper>
+        <SectionHeader>Most Popular</SectionHeader>
+        <div className="most-popular-items">{cards}</div>
+      </SectionWrapper>
+    </>
   );
 };
 export default MostPopular;

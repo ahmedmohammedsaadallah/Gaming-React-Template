@@ -1,5 +1,5 @@
 import "./Hero.css";
-
+import { PrimaryButton } from "../../components/index.js";
 const Hero = () => {
   return (
     <div className="hero-main">
@@ -8,9 +8,10 @@ const Hero = () => {
         <h4 className="hero-title">
           <em>Browse</em> Our Popular Games Here
         </h4>
-        <div className="main-button">
+        <PrimaryButton>Browse Now</PrimaryButton>
+        {/* <div className="main-button">
           <a href="browse.html">Browse Now</a>
-        </div>
+        </div> */}
       </div>
     </div>
   );
